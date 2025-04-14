@@ -6,7 +6,7 @@ describe("Add Task - User Workflow", () =>
             cy.visit("http://localhost:3000/todo_react_app");
         });
     
-        it("allows a user to add a new task with title and summary", () => 
+        it("should add a task with a title and summary", () => 
         {
             // Simulate user adding a valid task
             cy.addTask("Title test", "Summary test");
@@ -21,7 +21,7 @@ describe("Add Task - User Workflow", () =>
                 .should("be.visible");
         });
     
-        it("prevents a user from adding a task if the title is not set", () => 
+        it("should not add task if no title as been set", () => 
         {
             // User opens the New Task modal
             cy.get('[data-cy="new-task-button"]').click();
@@ -35,7 +35,7 @@ describe("Add Task - User Workflow", () =>
             cy.get('[data-cy="empty-message"]').should("be.visible");
         });
     
-        it("allows a user to add a task if no summary is provided but title is set", () => 
+        it("should add task if no summary as been set but title set", () => 
         {
             // User opens the New Task modal
             cy.get('[data-cy="new-task-button"]').click();
