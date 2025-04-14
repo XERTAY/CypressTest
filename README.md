@@ -1,5 +1,8 @@
 # Test Todo App
 
+Lien google doc :
+https://docs.google.com/document/d/1hL7PAO2fn0Azpd4Vy3HjLpgTWYOmUGDBFeOAK3kSES0/edit?usp=sharing
+
 ## Environnement d’Exécution
 
 - **Navigateur :** Firefox  
